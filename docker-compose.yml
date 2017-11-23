@@ -1,0 +1,16 @@
+version: '2'
+services:
+  db:
+    build: ./db
+    volumes:
+      - ./db/mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'asdf1234'
+  web:
+      build: ./web
+      ports:
+        - '8080:80'
+      volumes:
+        - ./html:/var/www/html
+      depends_on:
+        - db

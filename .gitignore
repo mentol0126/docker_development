@@ -1,0 +1,5 @@
+/vendor/*
+/db/mysql_data/*
+/html/*
+.htaccess
+.DS_Store
