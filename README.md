@@ -44,12 +44,13 @@ docker-compose up -d
 docker-compose ps
 ```
 5. ブラウザ接続確認する
-    html配下がドキュメントルートになります。
-    サブドメインの指定でhtml配下のディレクトリを切り替えられます。
-    **port:8080**も**docker-compose.yml**内の**ports**で変更可能です。
-
-    例) html配下にsampleプロジェクトを作成した場合
-    http://sample.localhost:8080/
+html配下がドキュメントルートになります。
+サブドメインの指定でhtml配下のディレクトリを切り替えられます。
+**port:8080**も**docker-compose.yml**内の**ports**で変更可能です。
+```
+例) html配下にsampleプロジェクトを作成した場合
+http://sample.localhost:8080/
+```
 
 # その他コマンド
 1. コンテナ名を確認する
