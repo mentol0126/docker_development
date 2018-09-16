@@ -13,5 +13,6 @@ if [ ! -e html/phpMyAdmin ]; then
   unzip phpMyAdmin-4.8.3-all-languages.zip
   mv phpMyAdmin-4.8.3-all-languages html/phpMyAdmin
   rm -f phpMyAdmin-4.8.3-all-languages.zip
+  mv phpmyadmin.config.inc.php html/phpMyAdmin/config.inc.php
 fi
 

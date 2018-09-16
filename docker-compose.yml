@@ -2,12 +2,16 @@ version: '2'
 services:
   db:
     build: ./db
+    container_name: 'db'
     volumes:
       - ./db/mysql_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: 'asdf1234'
+    ports:
+      - '3306:3306'
   web:
       build: ./web
+      container_name: 'web'
       ports:
         - '8080:80'
       volumes:
